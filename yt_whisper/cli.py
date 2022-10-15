@@ -29,7 +29,7 @@ def main():
 
     parser.add_argument("--break-lines", type=int, default=0,
                         help="Whether to break lines into a bottom-heavy pyramid shape if line length exceeds N characters. 0 disables line breaking.")
-    parser.add_argument("--device", choices=("cuda", "cpu"), default="cuda",
+    parser.add_argument("--device", choices=("cuda", "cpu" ,"mps"), default="cuda",
                         help="If cuda selected pytorch will use GPU otherwise CPU")
 
     args = parser.parse_args().__dict__
